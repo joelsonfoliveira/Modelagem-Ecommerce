@@ -20,7 +20,7 @@ class Produto {
   }
 }
 
-let produto = new Produto(1, "Mouse", 10, 5, false);
+let produto = new Produto(1, "Mouse", 10, 5, true);
 console.clear();
 console.log("===== PRODUTO =====");
 console.log("Código: " + produto.codigo);

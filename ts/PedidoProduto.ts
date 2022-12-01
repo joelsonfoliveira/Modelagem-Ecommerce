@@ -1,3 +1,0 @@
-class PedidoProduto {
-  constructor(parameters) {}
-}
