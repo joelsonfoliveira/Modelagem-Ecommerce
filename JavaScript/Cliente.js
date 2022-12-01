@@ -1,11 +1,17 @@
 "use strict";
 var Cliente = /** @class */ (function () {
-    function Cliente(nome, CPF) {
+    function Cliente(id, nome, endereco, telefone) {
+        this.id = id;
         this.nome = nome;
-        this.CPF = CPF;
+        this.endereco = endereco;
+        this.telefone = telefone;
     }
     return Cliente;
 }());
-var cliente = new Cliente("Paulo", "05524230412");
+var cliente = new Cliente(1, "Joelson Freitas", "Rua 01", "(00) 00000-0000");
+console.clear();
+console.log("===== CLIENTE =====");
+console.log("Identificador: " + cliente.id);
 console.log("Nome: " + cliente.nome);
-console.log("CPF: " + cliente.CPF);
+console.log("Endereço: " + cliente.endereco);
+console.log("Telefone: " + cliente.telefone);

@@ -17,5 +17,5 @@ class Pedido {
   }
 }
 
-let pedido = new Pedido(cliente, produto, 2, 20);
+let pedido = new Pedido(cliente, produto, 0, 4500);
 console.log(pedido);

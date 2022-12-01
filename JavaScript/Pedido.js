@@ -8,5 +8,5 @@ var Pedido = /** @class */ (function () {
     }
     return Pedido;
 }());
-var pedido = new Pedido(cliente, produto, 2, 20);
+var pedido = new Pedido(cliente, produto, 0, 4500);
 console.log(pedido);

@@ -1,19 +1,21 @@
 "use strict";
 var Produto = /** @class */ (function () {
-    function Produto(codigo, descricao, quantidade, valor, ativo) {
-        this.codigo = codigo;
-        this.descricao = descricao;
+    function Produto(id, nome, codigo_barras, quantidade, preco, situacao) {
+        this.id = id;
+        this.nome = nome;
+        this.codigo_barras = codigo_barras;
         this.quantidade = quantidade;
-        this.valor = valor;
-        this.ativo = ativo;
+        this.preco = preco;
+        this.situacao = situacao;
     }
     return Produto;
 }());
-var produto = new Produto(1, "Mouse", 10, 5, false);
+var produto = new Produto(1, "Notebook Dell", "7800000000001", 1, 4500, true);
 console.clear();
 console.log("===== PRODUTO =====");
-console.log("Código: " + produto.codigo);
-console.log("Descrição: " + produto.descricao);
+console.log("Identificador: " + produto.id);
+console.log("Nome: " + produto.nome);
+console.log("Código de Barras: " + produto.codigo_barras);
 console.log("Quantidade: " + produto.quantidade);
-console.log("Valor: R$" + produto.valor);
-console.log("Situação: " + (produto.ativo ? "Ativado" : "Desativado"));
+console.log("Preço: R$" + produto.preco);
+console.log("Situação: " + (produto.situacao ? "Novo" : "Usado"));
