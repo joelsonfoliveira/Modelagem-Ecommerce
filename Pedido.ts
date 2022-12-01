@@ -1,8 +1,18 @@
 class Pedido {
-  cliente: string;
+  CPFCliente: string;
   produtos: Array<Produto>;
-  valorTotal: number;
   desconto: number;
+  valorTotal: number;
 
-  constructor(parameters) {}
+  constructor(
+    CPFCliente: string,
+    produtos: Array<Produto>,
+    desconto: number,
+    valorTotal: number
+  ) {
+    this.CPFCliente = CPFCliente;
+    this.produtos = produtos;
+    this.desconto = desconto;
+    this.valorTotal = valorTotal;
+  }
 }
